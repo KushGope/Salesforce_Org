@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="40dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/MyTheme">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:text="Active Cases Start" />
+
+            <TextView
+                android:id="@+id/TVactiveS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:text="Active Cases End" />
+
+            <TextView
+                android:id="@+id/TVactiveE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:text="New Cases" />
+
+            <TextView
+                android:id="@+id/TVnew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:text="Resolved Cases" />
+
+            <TextView
+                android:id="@+id/TVresolved"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:text="Closed Cases" />
+
+            <TextView
+                android:id="@+id/TVclosed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

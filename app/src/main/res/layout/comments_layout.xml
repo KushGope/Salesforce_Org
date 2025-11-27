@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="40dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/numberInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Case Number:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/numberInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type number here"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/fetchCommentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Comments"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/addCommentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Comments"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/commentsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/commentsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a multi-line comment section.\nYou can add various comments here.\nEach line will be displayed separately.\n\nFor example:\n- Comment 1\n- Comment 2\n- Comment 3"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:gravity="top" />
+
+    </ScrollView>
+
+</LinearLayout>

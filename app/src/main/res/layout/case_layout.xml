@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="40dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/getCases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="@string/get_case_list" />
+
+    <Button
+        android:id="@+id/getCasesbyUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="@string/get_user_queue" />
+
+    <Button
+        android:id="@+id/refreshQueue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Refresh Queue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/caseListHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@android:dimen/app_icon_size"
+            android:textSize="20sp" />
+
+    </ScrollView>
+</LinearLayout>

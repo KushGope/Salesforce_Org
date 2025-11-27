@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sfdc</string>
+    <string name="auth_token">Auth Token</string>
+    <string name="start_auth">Start Auth</string>
+    <string name="Case">Cases</string>
+    <string name="Report">Reports</string>
+    <string name="Comment">Comments</string>
+    <string name="get_case_list">Get Case List</string>
+    <string name="get_user_queue">getMyQueue</string>
+</resources>
